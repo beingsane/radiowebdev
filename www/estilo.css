@@ -1,0 +1,213 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Calibri', 'Verdana', serif;
+	background-color: #F6F7F7;
+}
+input {
+	border-radius: 8px;
+	padding: 12px;
+	width: 500px;
+	border: 1px solid #ccc;
+	background-color: #fff;
+	-webkit-box-shadow:inset 1px 1px 3px 0 #D9D9D9;
+	box-shadow:inset 1px 1px 3px 0 #D9D9D9;
+	font-size: 18px;
+	outline: none;
+	margin-bottom: 10px;
+}
+.userlogado {
+	float: right;
+}
+#player {
+	float: right;
+	width: 50%;
+	height: 315px;
+	background-color: #000;
+}
+#tableMusics {
+	float: left;
+	width: 50%;
+}
+#tableMusics caption {
+
+}
+.userlogado .title {
+	font-size: 16px;
+	font-weight: bold;
+}
+.userlogado .subtitle {
+	font-size: 14px;
+}
+.mensagemError {
+	border: 1px solid #df6c6f;
+	background-color: #bb2a38;
+	border-radius: 8px;
+	padding: 10px;
+	color: #f39197;
+	width: 500px;
+}
+input.invalid {
+	background-image: url(invalid.png);
+	background-position: 98% center;
+	background-repeat: no-repeat;
+}
+input.valid {
+	background-image: url(valid.png);
+	background-position: 98% center;
+	background-repeat: no-repeat;
+}
+.formCadaster {
+	padding: 20px;
+}
+.content {
+	max-width: 900px;
+	margin: auto;
+}
+.top {
+	background-color: #00afef;
+	padding-top: 20px;
+	padding-bottom: 50px;
+	color: #fff;
+}
+.top img {
+	float: left;
+	margin-right: 15px;
+}
+.top h1 {
+	font-size: 32px;
+	font-weight: 800;
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+.top h2{
+	margin: 0;
+	padding: 0;
+	font-weight: 300;
+}
+.phone {
+	float: right;
+	margin-top: -100px;
+}
+.infos {
+	background-color: #ebebeb;	
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-right: 50px;
+}
+.infos.noMargin {
+	margin-right: 0;	
+}
+.infos h1 {
+	margin-left: 30px;
+    padding-top: 10px;
+}
+.info {
+	padding:20px;
+}
+.info img {
+	float: left;
+	margin-right: 15px;
+}
+.info .title {
+	font-size: 25px;
+	font-weight: 800;
+}
+
+.cadaster {
+	border-radius: 8px;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#00afef+1,0781ad+100 */
+	background: #00afef; /* Old browsers */
+	background: -moz-linear-gradient(top,  #00afef 1%, #0781ad 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#00afef), color-stop(100%,#0781ad)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #00afef 1%,#0781ad 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #00afef 1%,#0781ad 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #00afef 1%,#0781ad 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #00afef 1%,#0781ad 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00afef', endColorstr='#0781ad',GradientType=0 ); /* IE6-9 */
+	float: left;
+	padding: 10px;
+	color: #fff;
+	font-size: 20px;
+	font-weight: 800;
+	cursor: pointer;
+	border: 1px solid #075D7B;
+	margin-top: 30px;
+}
+.cadaster.formInvalid {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fcfcfc+1,ede8e8+100 */
+	background: #fcfcfc; /* Old browsers */
+	background: -moz-linear-gradient(top,  #fcfcfc 1%, #ede8e8 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#fcfcfc), color-stop(100%,#ede8e8)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #fcfcfc 1%,#ede8e8 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #fcfcfc 1%,#ede8e8 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #fcfcfc 1%,#ede8e8 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #fcfcfc 1%,#ede8e8 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#ede8e8',GradientType=0 ); /* IE6-9 */
+	color: #9E9E9E;
+	border: 1px solid #9E9E9E;
+}
+.cadaster img,
+.login img {
+	float: left;
+	margin-right: 10px;
+}
+.cadaster .title,
+.login .title {
+	float: left;
+}
+.login {
+	margin-top: 30px;
+	margin-left: 15px;
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	float: left;
+	padding: 10px;
+	color: #607D8B;
+	font-size: 20px;
+	font-weight: 800;
+	cursor: pointer;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fcfcfc+1,ede8e8+100 */
+	background: #fcfcfc; /* Old browsers */
+	background: -moz-linear-gradient(top,  #fcfcfc 1%, #ede8e8 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#fcfcfc), color-stop(100%,#ede8e8)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #fcfcfc 1%,#ede8e8 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #fcfcfc 1%,#ede8e8 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #fcfcfc 1%,#ede8e8 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #fcfcfc 1%,#ede8e8 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#ede8e8',GradientType=0 ); /* IE6-9 */
+}
+.box {
+	width: 100%;
+	background-color: #fff;
+	border: 1px solid #ccc;
+
+}
+.box .title {
+	border-bottom: 1px solid #ccc;
+	font-size: 18px;
+	font-weight: 800;
+	padding: 10px;
+}
+.box .description {
+	padding: 10px;
+}
+.spacebox {
+	float: left;
+	width: 33%;
+	padding: 5px;
+}
+.clr {
+	clear: both;
+}
+.footer {
+	width: 100%;
+	background-color: #607D8B;
+	padding: 30px;
+	text-align: center;
+	color: #fff;
+	margin-top: 60px;
+}
