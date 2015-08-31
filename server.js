@@ -6,7 +6,7 @@ var bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
-var port = 8080;
+var port = 8090;
 
 var FRONTEND_PATH = __dirname+'/www';
 app.use(express.static(FRONTEND_PATH));
@@ -84,92 +84,3 @@ app.post('/music/delete', function(req, res){
 
 server.listen(port);
 console.log('\n\nServer - RadioWEBDEV rodando na porta: ' + port);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Rotas para prática:
-
-"/login" (POST)
-Rota para logar no sistema
-Paramestros:
-{
-  email: "email do usuário",
-  senha: "senha do usuário"
-}
-Retorno:
-{
-  isValid: "valor lógico",
-  msg: "Caso valor lógico for falso é exibido a mensagem de erro",
-  data: "objeto do retorno"
-}
-
-"/user/cadaster" (POST)
-Rota para cadastrar novo usuário
-Paramestros:
-{
-  nome: "nome do usuário",
-  email: "email do usuário",
-  senha: "senha do usuário"
-}
-Retorno:
-{
-  isValid: "valor lógico",
-  msg: "Caso valor lógico for falso é exibido a mensagem de erro",
-  data: "objeto do retorno"
-}
-
-"/music/list" (GET)
-Rota para listar músicas cadastradas
-Paramestros:
-{}
-Retorno:
-{
-  isValid: "valor lógico",
-  msg: "Caso valor lógico for falso é exibido a mensagem de erro",
-  data: "lista das músicas"
-}
-
-"/music/cadaster" (POST)
-Rota para cadastrar nova música
-Paramestros:
-{
-  nome: "nome da música",
-  id_youtube: "id do youtube",
-  time: "tempo da música"
-}
-Retorno:
-{
-  isValid: "valor lógico",
-  msg: "Caso valor lógico for falso é exibido a mensagem de erro",
-  data: "objeto do retorno"
-}
-
-"/music/delete" (POST)
-Rota para deletar uma determinada música
-Paramestros:
-{
-  id: "id da música"
-}
-Retorno:
-{
-  isValid: "valor lógico",
-  msg: "Caso valor lógico for falso é exibido a mensagem de erro",
-  data: "objeto do retorno"
-}    
-
-
-
-server.listen(port);
-console.log('\n\nServer - RadioWEBDEV rodando na porta: ' + port);
-
